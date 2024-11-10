@@ -6,12 +6,14 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
+    screens: {
+      "lg": "1560px",
+      'sm': '576px',
+      'md': '768px',
     },
+    fontFamily: {
+      'open-sans': ['var(--font-openSans)'] 
+    }
   },
   plugins: [],
 };
